@@ -14,11 +14,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: AbhinavGupta-012/Coding-Warehouse
-          uses: actions/checkout@v4
-          with:
-            repository: AbhinavGupta-012/Coding-Warehouse
-            token: ${{ secrets.CODING_WAREHOUSE_TOKEN }}
-            submodules: true
+          token: ${{ secrets.CODING_WAREHOUSE_TOKEN }}
+          submodules: true
       
       - name: Configure Git Bot
         run: |
