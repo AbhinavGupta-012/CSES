@@ -1,0 +1,39 @@
+name: Sync to Coding-Warehouse
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Coding-Warehouse
+        uses: actions/checkout@v4
+        with:
+          repository: AbhinavGupta-012/Coding-Warehouse
+          uses: actions/checkout@v4
+          with:
+            repository: AbhinavGupta-012/Coding-Warehouse
+            token: ${{ secrets.CODING_WAREHOUSE_TOKEN }}
+            submodules: true
+      
+      - name: Configure Git Bot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Update CSES Submode and Path
+        run: |
+          git submodule update --remote CSES
+
+          if git diff --cached --quiet && git diff --quiet; then
+            echo "No update needed."
+            exit 0
+          fi
+
+          git add CSES
+          git commit -m "Auto-update CSES submodule from recent push"
+          git push
