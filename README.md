@@ -5,4 +5,6 @@ Code Warehouse for all of my CSES Solutions
 
 2. [Missing Number](/Missing%20Number) on 2nd Aug 2026 in Java. Time - 0.93 s and 224 Characters
 
-3. [Repetitions](/Repetitions) on 3rd Aug 2026 in Java. Time - 00.30 s and 306 Characters
+3. [Repetitions](/Repetitions) on 3rd Aug 2026 in Java. Time - 0.30 s and 306 Characters
+
+4. [Increasing Array](/Increasing%20Array) on 4th Aug 2026 in Java. Time - 0.98 s and 271 Characters
