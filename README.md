@@ -8,3 +8,5 @@ Code Warehouse for all of my CSES Solutions
 3. [Repetitions](/Repetitions) on 3rd Aug 2026 in Java. Time - 0.30 s and 306 Characters
 
 4. [Increasing Array](/Increasing%20Array) on 4th Aug 2026 in Java. Time - 0.98 s and 271 Characters
+
+5. [Permutations](/Permutations) on 5th Aug 2026 in Java. Time - 0.30 s and 364 Characters
